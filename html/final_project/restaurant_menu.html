@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Villa Nuova | menu</title>
+        <style>
+        beverages
+                {
+
+                    display: inline-block;
+                    margin: 10px;
+                    padding: 10px;
+                    border: 1px solid black;
+                    border-radius: 10px;
+                    width: 200px;
+                    text-align: center;
+                }
+        appetizers
+                {
+                    display: inline-block;
+                    margin: 10px;
+                    padding: 10px;
+                    border: 1px solid black;
+                    border-radius: 10px;
+                    width: 200px;
+                    text-align: center;
+                }
+        main-course
+                {
+                    display: inline-block;
+                    margin: 10px;
+                    padding: 10px;
+                    border: 1px solid black;
+                    border-radius: 10px;
+                    width: 200px;
+                    text-align: center;
+                }
+        #header-img
+                {
+                    border-radius: 50%;
+                    margin: 10px;
+                }
+        header
+                {
+                    text-align: center;
+                    background-color: lightgrey;
+                    padding: 10px;
+                }
+        #menu
+                {
+                    text-align: center;
+                    padding: 10px;
+                    color: olive;
+                }
+        #order-form
+                {
+                    text-align: center;
+                    padding: 10px;
+                    color: blue;
+                }
+        nav
+                {
+                    text-align: center;
+                    padding: 10px;
+                }
+        nav ul
+                {
+                    list-style-type: none;
+                }
+        nav ul li
+                {
+                    display: inline;
+                    margin: 10px;
+                }
+        article
+                {
+                    margin: 10px;
+                    padding: 10px;
+                    border: 1px solid black;
+                    border-radius: 10px;
+                    width: 200px;
+                    text-align: center;
+                    display: inline-block;
+                }
+        #order-form
+                {
+                    display:inline;
+                    text-align: center;
+                    padding: 10px;
+                }
+        form
+                {
+                    margin: 10px;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    padding: 10px;
+                    border: 1px solid black;
+                    border-radius: 10px;
+                    width: 200px;
+                    text-align: center;
+                }
+        input[type="checkbox"]
+                {
+                    margin: 10px;
+                }
+        input[type="number"]
+                {
+                    margin: 10px;
+                }
+        input[type="submit"]
+                {
+                    margin: 10px;
+                    padding: 10px;
+                    border: 1px solid black;
+                    border-radius: 10px;
+                    width: 200px;
+                    text-align: center;
+                    background-color: lightgrey;
+                }
+        textarea
+                {
+                    margin: 10px;
+                    padding: 10px;
+                    border: 1px solid black;
+                    border-radius: 10px;
+                    width: 200px;
+                    text-align: center;
+                }
+        footer
+                {
+                    text-align: center;
+                    background-color: lightgrey;
+                    padding: 10px;
+                }
+
+        </style>
+    </head>
+
+    <header>
+        <img id="header-img" alt="header-img" src="https://picsum.photos/id/78/200">
+        <h1>Villa Nuova</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</li></a>
+                <li><a href="#order-form">Order Form</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <body>
+        <section id="menu">
+            <h2 >Menu</h2>
+            <article>
+                <h3>Beverages</h3>
+                <img alt="menu-img" src="food_beverages.jpg" height="200px">
+                <p>Drinks you can buy in our Restaurant <br><i>4€</i></p>
+            </article>
+
+            <article>
+                <h3>Appetizers</h3>
+                <img alt="menu-img" src="food_appetizers.jpg" height="200px" width="150px">
+                <p>Appetizers you can buy in our Restaurant <br><i>7€</i></p>
+            </article>
+
+            <article>
+                <h3>Main Course</h3>
+                <img alt="menu-img" src="food_main-course.jpg" height="200px" width="150px">
+                <p>Main Course you can buy in our Restaurant <i>25€</i></p>
+            </article>
+        </section>
+
+        <section id="order-form">
+            <h2>Place your Order</h2>
+            <form>
+                    <h3>What food do you want?(no more than 10)</h3>
+                <input type="checkbox" name="beverages" id="beverages"></input>
+                <label for="beverages">Beverages</label>
+                    <br><br><br><br>
+                <input type="checkbox" name="appetizers" id="appetizers"></input>
+                <label for="appetizers">appetizers</label>
+                    <br>
+                <input type="checkbox" name="main" id="main"></input>
+                <label for="main">Main Course</label>
+                    <br>
+                    
+                    <h3>How many of each?</h3>
+                <input type="number" name="beverages" id="quant_bev" min="0" max="10" value="0">
+                <label for="quant_bev">Beverages</label>
+                    <br>
+                <input type="number" name="appetizers" id="quant_app" min="0" max="10" value="0">
+                <label for="quant_app">Appetizers</label>
+                    <br>
+                <input type="number" name="main" id="quant_main" min="0" max="10" value="0">
+                <label for="quant_main">Main Course</label>
+                    <br>
+
+                    <h3>Additional</h3>
+                <input type="checkbox" name="check_sauce" id="check_sauce"></input>
+                <label for="check_sauce">Sauce</label>
+                    <br>
+                <input type="checkbox" name="check_bread" id="check_bread"></input>
+                <label for="check_bread">Bread</label>
+                    <br>
+                <input type="checkbox" name="check_desert" id="check_desert"></input>
+                <label for="check_desert">Dessert</label>
+                    <br>
+                    
+                    <h3>Comments</h3>
+                <textarea name="comments" id="comments" rows="4" cols="50" placeholder="Any comments or special wishes?" maxlength="128"></textarea>
+                    <br>
+                <input type="submit" value="Go To Checkout"></input>
+            </form>
+        </section>
+    </body>
+
+    <footer>
+        <p>Made with love by @kuntzschi112</p>
+</html>
